@@ -1,0 +1,88 @@
+.logo-animation_container {
+    color: white;
+    margin: 10px;
+}
+
+.logo_flex {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(3, 3, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    animation: 2s ease-out 0s 1 navMovement3;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    position: absolute;
+}
+
+@keyframes navMovement3 {
+    0% {
+        height: 100%;
+    }
+    80% {
+        height: 100%;
+    }
+    100% {
+        height: 90px;
+    }
+}
+
+.nav-menu {
+    width: 100%;
+    background-color: rgb(3, 3, 70);
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 90px;
+    padding-bottom: 10px;
+}
+
+.nav-menu_items {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.nav-menu_item {
+    margin: 0px;
+    display: inline;
+    padding: 20px;
+    color: white;
+
+    :hover {
+        background-color: rgb(69, 69, 201);
+    }
+    
+}
+
+.nav-menu_item:hover {
+    background-color: rgb(69, 69, 201);
+    cursor: pointer;
+}
+
+.nav-menu_item:active {
+    transform: scale(.2);
+    padding: 18px;
+    // box-shadow: 0 3px 15px -2px;
+  }
+
+.logo_svg {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 7s linear forwards;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+.logo_p {
+    position: relative;
+    top: -50px;
+    margin: 0px;
+}
